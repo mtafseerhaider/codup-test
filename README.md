@@ -18,7 +18,7 @@
 </p>
                           
 ## About Codup Test
-Codup Test is developed with Cypress and JavaScript. The goal of this framework to provide structure and guideline to automate all possible test scenarios related to Codup Technical Test.
+Codup Test is developed with Cypress and JavaScript. The goal of this framework is to provide structure and guideline to automate all possible test scenarios related to Codup Technical Test.
 
 ### Repository
 
