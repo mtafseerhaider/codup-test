@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.7720" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-05-21T20:59:35" tests="0" file="cypress/tests/api-tests/users-api.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test 1 - API Testing" timestamp="2022-05-21T20:59:35" tests="1" time="0.7380" failures="0">
+    <testcase name="Test 1 - API Testing Validate Chelsey Dietrich has Zipcode 33263" time="0.7200" classname="Validate Chelsey Dietrich has Zipcode 33263">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,13 @@
+{
+	"env": {
+		"webUrl": "https://www.google.com/maps",
+		"apiEndpoint": "https://jsonplaceholder.typicode.com",
+		"fixtureFile": "testData.json"
+	},
+    "integrationFolder": "cypress/tests",
+	"reporter": "cypress-multi-reporters",
+	"reporterOptions": {
+		"configFile": "reporter-config.json"
+	},
+	"screenshotsFolder": "cypress/reports/screenshots"
+}

@@ -1,0 +1,151 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-21T20:59:40.437Z",
+    "end": "2022-05-21T20:59:56.440Z",
+    "duration": 16003,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4c9aa7a2-bea3-452d-a321-183e23a678f9",
+      "title": "",
+      "fullFile": "cypress/tests/ui-tests/google-map-search.spec.js",
+      "file": "cypress/tests/ui-tests/google-map-search.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90558139-b284-4225-bb79-290493a173f0",
+          "title": "Test 2 - UI testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should open the website",
+              "fullTitle": "Test 2 - UI testing Should open the website",
+              "timedOut": null,
+              "duration": 6260,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Openning the URL');\ncy.visit(Cypress.env('webUrl'));\ncy.wait(time * 2);",
+              "err": {},
+              "uuid": "b00531e5-00e5-4aaf-a54a-cb3d5b306065",
+              "parentUUID": "90558139-b284-4225-bb79-290493a173f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should search for test data",
+              "fullTitle": "Test 2 - UI testing Should search for test data",
+              "timedOut": null,
+              "duration": 6122,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "googleMapPage.searchFor(this.testData);\ngoogleMapPage.clickSearchButton();\ncy.wait(time * 5);",
+              "err": {},
+              "uuid": "d96adacb-91d6-40ba-aab2-eabe3b196865",
+              "parentUUID": "90558139-b284-4225-bb79-290493a173f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify search results",
+              "fullTitle": "Test 2 - UI testing Should verify search results",
+              "timedOut": null,
+              "duration": 235,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "googleMapPage.verifySearchResults(this.testData);",
+              "err": {},
+              "uuid": "c2c819e6-2f47-429c-9866-0e70c4d281da",
+              "parentUUID": "90558139-b284-4225-bb79-290493a173f0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b00531e5-00e5-4aaf-a54a-cb3d5b306065",
+            "d96adacb-91d6-40ba-aab2-eabe3b196865",
+            "c2c819e6-2f47-429c-9866-0e70c4d281da"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12617,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochareports",
+        "reportTitle": "Codup Test Report",
+        "reportPageTitle": "Codup Test Report",
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "timestamp": "longDate",
+        "quiet": true,
+        "inline": true,
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

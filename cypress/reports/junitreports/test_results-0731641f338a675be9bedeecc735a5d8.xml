@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="16.0030" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-05-21T20:59:40" tests="0" file="cypress/tests/ui-tests/google-map-search.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test 2 - UI testing" timestamp="2022-05-21T20:59:40" tests="3" time="15.9780" failures="0">
+    <testcase name="Test 2 - UI testing Should open the website" time="6.2600" classname="Should open the website">
+    </testcase>
+    <testcase name="Test 2 - UI testing Should search for test data" time="6.1220" classname="Should search for test data">
+    </testcase>
+    <testcase name="Test 2 - UI testing Should verify search results" time="0.2350" classname="Should verify search results">
+    </testcase>
+  </testsuite>
+</testsuites>

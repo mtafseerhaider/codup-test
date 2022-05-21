@@ -1,0 +1,209 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-21T20:59:35.744Z",
+    "end": "2022-05-21T20:59:56.440Z",
+    "duration": 13337,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4c9aa7a2-bea3-452d-a321-183e23a678f9",
+      "title": "",
+      "fullFile": "cypress/tests/ui-tests/google-map-search.spec.js",
+      "file": "cypress/tests/ui-tests/google-map-search.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90558139-b284-4225-bb79-290493a173f0",
+          "title": "Test 2 - UI testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should open the website",
+              "fullTitle": "Test 2 - UI testing Should open the website",
+              "timedOut": null,
+              "duration": 6260,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Openning the URL');\ncy.visit(Cypress.env('webUrl'));\ncy.wait(time * 2);",
+              "err": {},
+              "uuid": "b00531e5-00e5-4aaf-a54a-cb3d5b306065",
+              "parentUUID": "90558139-b284-4225-bb79-290493a173f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should search for test data",
+              "fullTitle": "Test 2 - UI testing Should search for test data",
+              "timedOut": null,
+              "duration": 6122,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "googleMapPage.searchFor(this.testData);\ngoogleMapPage.clickSearchButton();\ncy.wait(time * 5);",
+              "err": {},
+              "uuid": "d96adacb-91d6-40ba-aab2-eabe3b196865",
+              "parentUUID": "90558139-b284-4225-bb79-290493a173f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify search results",
+              "fullTitle": "Test 2 - UI testing Should verify search results",
+              "timedOut": null,
+              "duration": 235,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "googleMapPage.verifySearchResults(this.testData);",
+              "err": {},
+              "uuid": "c2c819e6-2f47-429c-9866-0e70c4d281da",
+              "parentUUID": "90558139-b284-4225-bb79-290493a173f0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b00531e5-00e5-4aaf-a54a-cb3d5b306065",
+            "d96adacb-91d6-40ba-aab2-eabe3b196865",
+            "c2c819e6-2f47-429c-9866-0e70c4d281da"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12617,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "dcc0cfcd-c7ea-4f39-9699-6858f8cdca76",
+      "title": "",
+      "fullFile": "cypress/tests/api-tests/users-api.spec.js",
+      "file": "cypress/tests/api-tests/users-api.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "acdb8fa0-1876-4955-a1bd-0362ed8b8373",
+          "title": "Test 1 - API Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Chelsey Dietrich has Zipcode 33263",
+              "fullTitle": "Test 1 - API Testing Validate Chelsey Dietrich has Zipcode 33263",
+              "timedOut": null,
+              "duration": 720,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: Cypress.env('apiEndpoint') + '/users',\n  headers: {\n    accept: 'application/json'\n  }\n}).as('usersRequest');\ncy.get('@usersRequest').then(response => {\n  expect(response.status).to.eq(200);\n  assert.isArray(response.body, 'Users Response is an array');\n  expect(response.body[4]).to.have.property('name', 'Chelsey Dietrich');\n  expect(response.body[4].address).to.have.property('zipcode', userZipCode);\n});",
+              "err": {},
+              "uuid": "7909bde9-9af8-4560-b247-96b82a6469bf",
+              "parentUUID": "acdb8fa0-1876-4955-a1bd-0362ed8b8373",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7909bde9-9af8-4560-b247-96b82a6469bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 720,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochareports",
+        "reportTitle": "Codup Test Report",
+        "reportPageTitle": "Codup Test Report",
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "timestamp": "longDate",
+        "quiet": true,
+        "inline": true,
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

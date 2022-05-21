@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<testsuites failures="0" errors="0" tests="4">
+  <testsuite name="Root Suite" timestamp="2022-05-21T20:59:40" tests="0" file="cypress/tests/ui-tests/google-map-search.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Test 2 - UI testing" timestamp="2022-05-21T20:59:40" tests="3" time="15.9780" failures="0">
+    <testcase name="Test 2 - UI testing Should open the website" time="6.2600" classname="Should open the website"/>
+    <testcase name="Test 2 - UI testing Should search for test data" time="6.1220" classname="Should search for test data"/>
+    <testcase name="Test 2 - UI testing Should verify search results" time="0.2350" classname="Should verify search results"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-05-21T20:59:35" tests="0" file="cypress/tests/api-tests/users-api.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Test 1 - API Testing" timestamp="2022-05-21T20:59:35" tests="1" time="0.7380" failures="0">
+    <testcase name="Test 1 - API Testing Validate Chelsey Dietrich has Zipcode 33263" time="0.7200" classname="Validate Chelsey Dietrich has Zipcode 33263"/>
+  </testsuite>
+</testsuites>

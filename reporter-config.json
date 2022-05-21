@@ -1,0 +1,20 @@
+{
+	"reporterEnabled": "mocha-junit-reporter, mochawesome",
+	"mochaJunitReporterReporterOptions": {
+		"mochaFile": "cypress/reports/junitreports/test_results-[hash].xml",
+		"toConsole": false
+	},
+	"mochawesomeReporterOptions": {
+		"reportDir": "cypress/reports/mochareports",
+		"reportTitle": "Codup Test Report",
+		"reportPageTitle": "Codup Test Report",
+		"reportFilename": "[status]_[datetime]-[name]-report",
+		"timestamp": "longDate",
+		"quiet": true,
+		"inline": true,
+		"charts": true,
+		"overwrite": false,
+		"html": false,
+		"json": true
+	}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "codup-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run:report": "run-s prereport cy:run postreport generate:htmlreport",
+    "cy:run": "cypress run --headless --browser chrome",
+    "delete:junitreports": "rm -rf cypress/reports/junitreports/* || true",
+    "delete:mochareports": "rm -rf cypress/reports/mochareports/* || true",
+    "delete:screenshots": "rm -rf cypress/reports/screenshots/* || true",
+    "prereport": "run-p delete:junitreports delete:mochareports delete:screenshots",
+    "postreport": "run-p combine:junitreports combine:mochareports",
+    "combine:junitreports": "jrm cypress/reports/combined-junitreport.xml \"cypress/reports/junitreports/*.xml\"",
+    "combine:mochareports": "mochawesome-merge cypress/reports/mochareports/*.json > cypress/reports/combined-mochareport.json",
+    "generate:htmlreport": "marge cypress/reports/combined-mochareport.json --reportDir ./ --inline"
+  },
+  "keywords": [],
+  "author": "Muhammad Tafseer Haider",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "cypress-multi-reporters": "^1.6.0",
+    "junit-report-merger": "^3.0.5",
+    "mocha": "^10.0.0",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.2"
+  }
+}
