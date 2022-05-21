@@ -1,10 +1,8 @@
 ![made-with-cypress](https://img.shields.io/badge/Developed%20with-Cypress-informational)
 
-<!-- Codup LOGO -->
 <br />
 <h1>
 <p align="center">
-  <img src="D:\Workspace\codup-test\codup-logo.jpg" alt="Logo" width="154" height="33">
   <br>Codup Test
 </h1>
   <p align="center">
@@ -17,12 +15,6 @@
   <a href="#best-practices">Best Practices</a> •
   <a href="#contributors">Contributors</a> •
   <a href="LICENSE.md">License</a>
-</p>
-
-<p align="center">
-![screenshot](cypress/videos/api-tests/users-api.spec.js.gif)
-![screenshot](cypress/videos/ui-tests/google-map-search.spec.js.gif)
-![screenshot](mocha-report.jpg) 
 </p>
                           
 ## About Codup Test
